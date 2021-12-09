@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>JavaScript сабақтары</title>
+    <meta charset="utf-8"/>
+    <meta content="Асылбек" name="author"/>
+    <meta content="JavaScript сабақтары. Ұстаз - Дос." name="description"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <link rel="icon" href="img/icons/favicon.webp" type="image/webp"/>
+    <link rel="preload" href="fonts/Montserrat/Montserrat-Light.woff2" crossorigin="anonymous" as="font" type="font/woff2"/>
+    <link rel="preload" href="fonts/Montserrat/Montserrat-Regular.woff2" crossorigin="anonymous" as="font" type="font/woff2"/>
+    <link rel="stylesheet" href="css/style.css"/>
+  </head>
+  <body class="page">
+    <main>
+      <section class="table">
+        <div class="container">
+          <div class="table__search">
+            <div class="table__select">
+            </div>
+            <input type="text"/>
+            <button class="btn">Search</button>
+          </div>
+          <div class="table__items">
+            <div class="table-item card">
+              <div class="table-item__header">
+                <div class="table-item__title">
+                  <h3>Тапсырма аты</h3><span>edit</span>
+                </div>
+                <div class="table-item__text">Тапсырма тексті
+                </div>
+              </div>
+              <div class="table-item__btns">
+                <button class="delete"></button>
+                <button class="bookmark"></button>
+              </div>
+            </div>
+            <div class="table-item card">
+              <div class="table-item__header">
+                <div class="table-item__title">
+                  <h3>Тапсырма 2</h3><span></span>
+                </div>
+                <div class="table-item__text">Тапсырма2 тексті
+                </div>
+              </div>
+              <div class="table-item__btns">
+                <button class="delete"></button>
+                <button class="bookmark-hover"></button>
+              </div>
+            </div>
+          </div>
+          <div class="table__inputs">
+            <div class="table__input">
+              <div class="table__input-title">Todo title
+              </div>
+              <input type="text"/>
+            </div>
+            <div class="table__input">
+              <div class="table__input-text">Todo text
+              </div>
+              <input type="text"/>
+            </div>
+          </div>
+          <div class="table__btn">
+            <button class="btn">Add new</button>
+          </div>
+        </div>
+      </section>
+      <div class="modal">
+      </div>
+    </main>
+    <footer class="footer">
+    </footer>
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+mixin table()
+	+b.SECTION.table
+		.container
+			+e.search
+				+e.select
+				input(type="text")
+				button.btn Search
+
+			+e.items
+				+b.table-item.card
+					+e.header
+						+e.title
+							h3 Тапсырма аты
+							span edit
+						+e.text Тапсырма тексті
+					+e.btns
+						button.delete
+						button.bookmark
+				+b.table-item.card
+					+e.header
+						+e.title
+							h3 Тапсырма 2
+							span
+						+e.text Тапсырма2 тексті
+					+e.btns
+						button.delete
+						button.bookmark-hover
+
+			+e.inputs
+				+e.input
+					+e.input-title Todo title
+					input(type="text")
+				+e.input
+					+e.input-text Todo text
+					input(type="text")
+
+			+e.btn
+				button.btn Add new

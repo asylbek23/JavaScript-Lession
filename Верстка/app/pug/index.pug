@@ -1,0 +1,21 @@
+extends template
+
+include index/table
+
+include components/modals
+
+block head
+	head
+		+head({
+			"title": "JavaScript сабақтары",
+			"author": "Асылбек",
+			"description": "JavaScript сабақтары. Ұстаз - Дос."
+		})
+
+block content
+	+table()
+
+	+modals()
+
+
+
