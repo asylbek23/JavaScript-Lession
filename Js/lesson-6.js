@@ -26,20 +26,15 @@ let photoOutput = document.getElementById('photo');
 
 let photo = {
 	albumId: 1,
-	i: 1,
 	title: "accusamus beatae ad facilis cum similique qui sunt",
 	url: "https://via.placeholder.com/600/92c952",
 	thumbnailUrl: "https://via.placeholder.com/150/92c952"
 };
 
-// for (let i = 0; i < photo.length; i++) {
-// 	photo[i];
-// }
-
-for (let key in photo) {
-	// console.log(key);
-	photoOutput.innerHTML += key + ' ';
-}
+photoOutput.innerHTML = photo.albumId;
+photoOutput.innerHTML += photo.title;
+photoOutput.innerHTML += photo.url;
+photoOutput.innerHTML += photo.thumbnailUrl;
 
 
 // 3) В html есть тег <img id="img1" /> как получить доступ через js ?
@@ -59,7 +54,8 @@ getImg.src = 'https://via.placeholder.com/600/92c952';
 let styles = { color: "red", fontSize: "50px" };
 let myText = document.getElementById('mytext');
 
-myText.style.color = 'red';
+myText.style.color = styles.color;
+myText.style.fontSize += styles.fontSize;
 
 
 // 6) var arr = [1, 555, 555, 98, 100, 2023, 2, 45]

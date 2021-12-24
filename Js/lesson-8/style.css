@@ -1,0 +1,27 @@
+body {
+	background: #111;
+	color: #fff;
+	font-size: 24px;
+}
+
+a {
+	color: #fff;
+	cursor: pointer;
+}
+
+p {
+	cursor: pointer;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 40px 0;
+}
+
+.text-clicked {
+	text-decoration: line-through;
+}
+
+.nav__item--active {color:red};
+
